@@ -1,0 +1,1266 @@
+body,html{
+    height: 100%;
+}
+body > div.grow{
+    display: inline-block;
+    position: fixed;
+    text-indent: -9999px;
+    background-image: url("../images/flower01.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 6.1053vw 1.4737vw 0;
+    bottom: 45px;
+    right: 2%;
+}
+section ul.pagination{
+    box-sizing: border-box;
+    background: url("../images/faucet.png") no-repeat;
+    background-size: 28%;
+    background-position: 3px top;
+    padding-top: 60px;
+    position: fixed;
+    top: 35%;
+    right: -9.3%;
+    width: 13%;
+    z-index: 1000;
+}
+section ul.pagination:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+section ul.pagination li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+section ul.pagination li a{
+    display: block;
+    text-indent: -9999px;
+    width: 15px;
+    height: 10px;
+    background: url("../images/pager.png") no-repeat 5px center;
+    background-size: contain;
+}
+section ul.pagination li a:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+section ul.pagination li a.active{
+    width: 20px;
+    height: 28px;
+    background: url("../images/waterdorp.png") no-repeat center center;
+    background-size: cover;
+}
+.bx-wrapper .bx-controls .bx-pager{
+    bottom: 8%;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 20px;
+    height: 20px;
+    background: url("../images/pager.png") no-repeat center center;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: url("../images/pagerHover.png") no-repeat center center;
+}
+*{
+    color: #fff;
+}
+.about,
+.education,
+.medical,
+.war,
+.water{
+    width: 100%;
+    height: 100%;
+}
+.education ul.Slider,
+.education ul.Slider li,
+.medical ul.Slider,
+.medical ul.Slider li,
+.war ul.Slider,
+.war ul.Slider li,
+.water ul.Slider,
+.water ul.Slider li{
+    height: 100%;
+}
+.about div,
+.education ul.Slider li.edu02 div,
+.medical ul.Slider li.med02 div,
+.war ul.Slider li.war02 div,
+.water ul.Slider li.wat02 div{
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    padding-top: 50vh;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.about div h2,
+.about div p,
+.education ul.Slider li.edu02 div h2,
+.education ul.Slider li.edu02 div p,
+.medical ul.Slider li.med02 div h2,
+.medical ul.Slider li.med02 div p,
+.war ul.Slider li.war02 div h2,
+.war ul.Slider li.war02 div p,
+.water ul.Slider li.wat02 div h2,
+.water ul.Slider li.wat02 div p{
+    font-size: 0px;
+}
+.about.active div h2,
+.education.active ul.Slider li.edu02 div h2,
+.medical.active ul.Slider li.med02 div h2,
+.war.active ul.Slider li.war02 div h2,
+.water.active ul.Slider li.wat02 div h2{
+    font-weight: 700;
+}
+.about.active div p,
+.education.active ul.Slider li.edu02 div p,
+.medical.active ul.Slider li.med02 div p,
+.war.active ul.Slider li.war02 div p,
+.water.active ul.Slider li.wat02 div p{
+    margin: 0 auto;
+    font-weight: 300;
+}
+.education ul.Slider li.edu01 div h2,
+.medical ul.Slider li.med01 div h2,
+.war ul.Slider li.war01 div h2,
+.water ul.Slider li.wat01 div h2{
+    font-weight: 700;
+}
+.education ul.Slider li.edu01 div p,
+.medical ul.Slider li.med01 div p,
+.war ul.Slider li.war01 div p,
+.water ul.Slider li.wat01 div p{
+    font-weight: 300;
+}
+
+/* about area start */
+
+.about{
+    background: url("../images/main_01.jpg") no-repeat center center;
+    background-size: cover;
+}
+.about.active div{
+    opacity: 1;
+}
+.about.active div p{
+    width: 25%;
+}
+
+/* about area Fin */
+
+.education ul.Slider:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.education ul.Slider li.edu01{
+    background: url("../images/mainleft_02.jpg") no-repeat center center;
+    background-size: cover;
+}
+.education ul.Slider li.edu02{
+    background: url("../images/main_02.jpg") no-repeat center center;
+    background-size: cover;
+}
+.education ul.Slider li.edu03{
+    background: url("../images/mainright_02.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.education.active ul.Slider li.edu02 div{
+    opacity: 1;
+}
+.education.active ul.Slider li.edu02 div p{
+    width: 27%;
+}
+.education ul.Slider li.edu03 figure:after{
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+/* education area Fin */
+
+.medical ul.Slider:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.medical ul.Slider li.med01{
+    background: url("../images/mainleft_03.jpg") no-repeat center center;
+    background-size: cover;
+}
+.medical ul.Slider li.med02{
+    background: url("../images/main_03.jpg") no-repeat center center;
+    background-size: cover;
+}
+.medical ul.Slider li.med03{
+    background: url("../images/mainright_03.jpg") no-repeat center center;
+    background-size: cover;
+}
+.medical.active ul.Slider li.med02 div{
+    opacity: 1;
+}
+.medical.active ul.Slider li.med02 div p{
+    width: 27%;
+}
+.medical ul.Slider li.med03 figure:after{
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+/* medical area Fin */
+
+.war ul.Slider:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.war ul.Slider li.war01{
+    background: url("../images/mainleft_04.jpg") no-repeat center center;
+    background-size: cover;
+}
+.war ul.Slider li.war02{
+    background: url("../images/main_04.jpg") no-repeat center center;
+    background-size: cover;
+}
+.war ul.Slider li.war03{
+    background: url("../images/mainright_04.jpg") no-repeat center center;
+    background-size: cover;
+}
+.war.active ul.Slider li.war02 div{
+    opacity: 1;
+}
+.war.active ul.Slider li.war02 div p{
+    width: 28%;
+}
+.war ul.Slider li.war03 figure:after{
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+/* war area Fin */
+
+.water ul.Slider:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.water ul.Slider li.wat01{
+    background: url("../images/mainleft_05.jpg") no-repeat center center;
+    background-size: cover;
+}
+.water ul.Slider li.wat02{
+    background: url("../images/main_05.jpg") no-repeat center center;
+    background-size: cover;
+}
+.water ul.Slider li.wat03{
+    background: url("../images/mainright_05.jpg") no-repeat center center;
+    background-size: cover;
+}
+.water.active ul.Slider li.wat02 div{
+    opacity: 1;
+}
+.water.active ul.Slider li.wat02 div p{
+    width: 26%;
+}
+.water ul.Slider li.wat03 figure:after{
+    content: ''; display: block; clear: both; visibility: hidden;
+}
+
+/* water area Fin */
+
+@media screen and (max-width:767px){
+    body > div.grow{
+        padding: 6.1053vw 12px 0;
+        right: 1%;
+    }
+    section ul.pagination{
+        background-size: 31%;
+        background-position: 5px top;
+        padding-top: 30px;
+        width: 15%;
+    }
+    section ul.pagination li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    section ul.pagination li a.active{
+        width: 14px;
+        height: 22px;
+        background-size: contain;
+    }
+    section ul.pagination li a{
+        display: block;
+        text-indent: -9999px;
+        width: 15px;
+        height: 10px;
+        background: url("../images/pager.png") no-repeat 2px center;
+        background-size: contain;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        width: 5%;
+    }
+    .bx-wrapper .bx-prev{
+        left: 6%;
+    }
+    .bx-wrapper .bx-next{
+        right: 6%;
+    }
+    .about.active div h2,
+    .education.active ul.Slider li.edu02 div h2,
+    .medical.active ul.Slider li.med02 div h2,
+    .war.active ul.Slider li.war02 div h2,
+    .water.active ul.Slider li.wat02 div h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .about.active div p,
+    .education.active ul.Slider li.edu02 div p,
+    .medical.active ul.Slider li.med02 div p,
+    .war.active ul.Slider li.war02 div p,
+    .water.active ul.Slider li.wat02 div p{
+        line-height: 22px;
+        font-size: 20px;
+    }
+    .education ul.Slider li.edu01 div,
+    .medical ul.Slider li.med01 div,
+    .war ul.Slider li.war01 div,
+    .water ul.Slider li.wat01 div{
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.5);
+        text-align: center;
+        padding: 70% 15%;
+        width: 100%;
+        height: 100%;
+    }
+    .education ul.Slider li.edu01 div h2,
+    .medical ul.Slider li.med01 div h2,
+    .war ul.Slider li.war01 div h2,
+    .water ul.Slider li.wat01 div h2{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .education ul.Slider li.edu01 div p,
+    .medical ul.Slider li.med01 div p,
+    .war ul.Slider li.war01 div p,
+    .water ul.Slider li.wat01 div p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    section ul li figure figcaption{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0,0.5);
+        height: 218px;
+        padding: 20% 5%;
+    }
+    section ul li figure figcaption dl dt{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 4px;
+    }
+    section ul li figure figcaption dl dd{
+        box-sizing: border-box;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .education ul.Slider li.edu03 figure,
+    .medical ul.Slider li.med03 figure,
+    .war ul.Slider li.war03 figure,
+    .water ul.Slider li.wat03 figure{
+        width: 80%;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type,
+    .medical ul.Slider li.med03 figure:first-of-type,
+    .war ul.Slider li.war03 figure:first-of-type,
+    .water ul.Slider li.wat03 figure:first-of-type{
+        margin: 27% auto 5%;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    }
+    .education ul.Slider li.edu03 figure img,
+    .medical ul.Slider li.med03 figure img,
+    .war ul.Slider li.war03 figure img,
+    .water ul.Slider li.wat03 figure img{
+        display: none;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type,
+    .medical ul.Slider li.med03 figure:last-of-type,
+    .war ul.Slider li.war03 figure:last-of-type,
+    .water ul.Slider li.wat03 figure:last-of-type{
+        margin: 0 auto;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    }
+
+    /* sub global */
+    
+    .about div{
+        background: url("../images/hand_01.png") no-repeat center bottom;
+        background-size: 47vh;
+    }
+    .about.active div{
+        transform: scale(1.04);
+    }
+    .about div p{
+        min-width: 285px;
+    }
+
+    /* about area Fin */
+
+    .education ul.Slider li.edu02 div{
+        background: url("../images/hand_02.png") no-repeat 60% bottom;
+        background-size: 75vh;
+    }
+    .education.active ul.Slider li.edu02 div{
+        transform: scale(1.04);
+    }
+    .education.active ul.Slider li.edu02 div p{
+        min-width: 300px;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        background: url("../images/subright_01.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        background: url("../images/subright_02.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med02 div{
+        background: url("../images/hand_03.png") no-repeat center bottom;
+        background-size: 50vh;
+    }
+    .medical.active ul.Slider li.med02 div{
+        transform: scale(1.08);
+    }
+    .medical.active ul.Slider li.med02 div p{
+        min-width: 300px;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        background: url("../images/subright_03.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        background: url("../images/subright_04.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    /* medical area Fin */
+
+    .war ul.Slider li.war02 div{
+        background: url("../images/hand_04.png") no-repeat 51% bottom;
+        background-size: 50vh;
+    }
+    .war.active ul.Slider li.war02 div{
+        transform: scale(1.08);
+    }
+    .war.active ul.Slider li.war02 div p{
+        min-width: 290px;
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        background: url("../images/subright_05.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .war ul.Slider li.war03 figure:last-of-type{
+        background: url("../images/subright_06.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    /* war area Fin */
+
+    .water ul.Slider li.wat02 div{
+        background: url("../images/hand_05.png") no-repeat 51% bottom;
+        background-size: 51vh;
+    }
+    .water.active ul.Slider li.wat02 div{
+        transform: scale(1.05);
+    }
+    .water.active ul.Slider li.wat02 div p{
+        min-width: 300px;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        background: url("../images/subright_07.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        background: url("../images/subright_08.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    /* water area Fin */
+}
+@media screen and (max-width:767px) and (orientation:landscape){
+    .bx-wrapper .bx-controls .bx-pager{
+        bottom: 14%;
+    }
+    body > div.grow{
+        right: 2%;
+    }
+    section ul.pagination{
+        background-position: 4px top;
+        width: 14%;
+    }
+    section ul.pagination li {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .about div{
+        background: url("../images/hand_01.png") no-repeat center bottom;
+        background-size: 63vh;
+        padding-top: 35vh;
+    }
+    .about.active div{
+        transform: scale(1.05);
+    }
+    .about.active div h2{
+        font-size: 26px;
+    }
+    .about.active div p{
+        font-size: 16px;
+    }
+    .about div h2{
+        margin-bottom: 5px;
+    }
+    .about div p{
+        width: 15%;
+        min-width: 190px;
+        line-height: 18px;
+    }
+
+    /* about area Fin */
+
+    .education ul.Slider li.edu01 div{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        width: 40vw;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0;
+        height: 0;
+    }
+    .education ul.Slider li.edu02 div{
+        background: url("../images/hand_02.png") no-repeat center bottom;
+        background-size: 110vh;
+        padding-top: 35vh;
+    }
+    .education.active ul.Slider li.edu02 div{
+        transform: scale(1.05);
+    }
+    .education.active ul.Slider li.edu02 div h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .education.active ul.Slider li.edu02 div p{
+        width: 20%;
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .education ul.Slider li.edu03:after{
+        content: ''; display: block; clear: both; visibility: hidden;
+    }
+    .education ul.Slider li.edu03{
+        position: relative;
+    }
+    .education ul.Slider li.edu03 figure{
+        width: 35%;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        margin: 0;
+        position: absolute;
+        top: 23%;
+        left: 12%;
+    }
+    .education ul.Slider li.edu03 figure figcaption{
+        height: 200px;
+        padding: 10% 5%;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        position: absolute;
+        top: 23%;
+        right: 12%;
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med01 div{
+        position: absolute;
+        top: 52%;
+        left: 46.5%;
+        width: 23vw;
+        min-width: 300px;
+        text-align: center;
+        height: 0;
+        padding: 0;
+    }
+    .medical ul.Slider li.med02 div{
+        background: url("../images/hand_03.png") no-repeat center bottom;
+        background-size: 70vh;
+        padding-top: 35vh;
+    }
+    .medical.active ul.Slider li.med02 div{
+        transform: scale(1.1);
+    }
+    .medical.active ul.Slider li.med02 div h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .medical.active ul.Slider li.med02 div p{
+        width: 25%;
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .medical ul.Slider li.med03:after{
+        content: ''; display: block; clear: both; visibility: hidden;
+    }
+    .medical ul.Slider li.med03{
+        position: relative;
+    }
+    .medical ul.Slider li.med03 figure{
+        width: 35%;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        margin: 0;
+        position: absolute;
+        top: 23%;
+        left: 12%;
+    }
+    .medical ul.Slider li.med03 figure figcaption{
+        height: 200px;
+        padding: 10% 5%;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        position: absolute;
+        top: 23%;
+        right: 12%;
+    }
+
+    /* medical area Fin */
+
+    .war ul.Slider li.war01 div{
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        width: 28vw;
+        min-width: 250px;
+        text-align: center;
+        padding: 0;
+        height: 0;
+    }
+    .war ul.Slider li.war02 div{
+        background: url("../images/hand_04.png") no-repeat 51% bottom;
+        background-size: 70vh;
+        padding-top: 35vh;
+    }
+    .war.active ul.Slider li.war02 div{
+        transform: scale(1.1);
+    }
+    .war.active ul.Slider li.war02 div h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .war.active ul.Slider li.war02 div p{
+        min-width: 230px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .war ul.Slider li.war03:after{
+        content: ''; display: block; clear: both; visibility: hidden;
+    }
+    .war ul.Slider li.war03{
+        position: relative;
+    }
+    .war ul.Slider li.war03 figure{
+        width: 35%;
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        margin: 0;
+        position: absolute;
+        top: 23%;
+        left: 12%;
+    }
+    .war ul.Slider li.war03 figure figcaption{
+        height: 200px;
+        padding: 10% 5%;
+    }   
+    .war ul.Slider li.war03 figure:last-of-type{
+        position: absolute;
+        top: 23%;
+        right: 12%;
+    }
+
+    /* war area Fin */
+
+    .water ul.Slider li.wat01 div{
+        position: absolute;
+        top: 63%;
+        left: 40%;
+        width: 11.5vw;
+        min-width: 270px;
+        text-align: center;
+        padding: 0;
+        height: 0;
+    }
+    .water ul.Slider li.wat02 div{
+        background: url("../images/hand_05.png") no-repeat 51% bottom;
+        background-size: 75vh;
+        padding-top: 35vh;
+    }
+    .water.active ul.Slider li.wat02 div{
+        transform: scale(1.1);
+    }
+    .water.active ul.Slider li.wat02 div h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .water.active ul.Slider li.wat02 div p{
+        min-width: 250px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .water ul.Slider li.wat03:after{
+        content: ''; display: block; clear: both; visibility: hidden;
+    }
+    .water ul.Slider li.wat03{
+        position: relative;
+    }
+    .water ul.Slider li.wat03 figure{
+        width: 35%;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        margin: 0;
+        position: absolute;
+        top: 23%;
+        left: 12%;
+    }
+    .water ul.Slider li.wat03 figure figcaption{
+        height: 200px;
+        padding: 10% 5%;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        position: absolute;
+        top: 23%;
+        right: 12%;
+    }
+    
+    /* water area Fin */
+}
+@media screen and (min-width:768px){
+    .about.active div h2,
+    .education.active ul.Slider li.edu02 div h2,
+    .medical.active ul.Slider li.med02 div h2,
+    .war.active ul.Slider li.war02 div h2,
+    .water.active ul.Slider li.wat02 div h2{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .about.active div p,
+    .education.active ul.Slider li.edu02 div p,
+    .medical.active ul.Slider li.med02 div p,
+    .war.active ul.Slider li.war02 div p,
+    .water.active ul.Slider li.wat02 div p{
+        line-height: 28px;
+        font-size: 26px;
+    }
+    .education ul.Slider li.edu03 figure img,
+    .medical ul.Slider li.med03 figure img,
+    .war ul.Slider li.war03 figure img,
+    .water ul.Slider li.wat03 figure img{
+        width: 53%;
+    }
+    .education ul.Slider li.edu01 div h2,
+    .medical ul.Slider li.med01 div h2,
+    .war ul.Slider li.war01 div h2,
+    .water ul.Slider li.wat01 div h2{
+        font-size: 2.1053vw;
+        line-height: 2.2105;
+    }
+    section ul li figure figcaption dl dt,
+    section ul li figure figcaption dl dd{
+        color: #333333;
+    }
+    section ul li figure{
+        background-color: #fff;
+    }
+    section ul li figure figcaption{
+        width: 47%;
+        text-align: center;
+    }
+
+    /* sub global */
+
+    .about div{
+        background: url("../images/hand_01.png") no-repeat center bottom;
+        background-size: 52vh;
+    }
+    .about.active div{
+        transform: scale(1.05);
+    }
+    .about.active div p{
+        min-width: 300px;
+    }
+
+    /* about area Fin */
+
+    .education ul.Slider li.edu01 div{
+        position: absolute;
+        text-align: center;
+    }
+    .education.active ul.Slider li.edu02 div{
+        transform: scale(1.05);
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        position: absolute;
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .education ul.Slider li.edu03 figure:first-of-type img{
+        float: left;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type img{
+        float: right;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type figcaption{
+        float: left;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        position: absolute;
+        box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .education ul.Slider li.edu03 figure:last-of-type figcaption{
+        float: right;
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med01 div{
+        position: absolute;
+        width: 23vw;
+        min-width: 400px;
+        text-align: center;
+    }
+    .medical ul.Slider li.med02 div{
+        background: url("../images/hand_03.png") no-repeat center bottom;
+        background-size: 55vh;
+    }
+    .medical.active ul.Slider li.med02 div{
+        transform: scale(1.1);
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        position: absolute;
+        box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .medical ul.Slider li.med03 figure:first-of-type img{
+        float: right;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type img{
+        float: left;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type figcaption{
+        float: right;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        position: absolute;
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .medical ul.Slider li.med03 figure:last-of-type figcaption{
+        float: left;
+    }
+
+    /* medical area Fin */
+    
+    .war ul.Slider li.war01 div{
+        position: absolute;
+        text-align: center;
+        width: 28vw;
+    }
+    .war ul.Slider li.war02 div{
+        background: url("../images/hand_04.png") no-repeat 51% bottom;
+        background-size: 56vh;
+    }
+    .war.active ul.Slider li.war02 div{
+        transform: scale(1.1);
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        position: absolute;
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .war ul.Slider li.war03 figure:first-of-type img{
+        float: left;
+    }
+    .war ul.Slider li.war03 figure:last-of-type img{
+        float: right;
+    }
+    .war ul.Slider li.war03 figure:first-of-type figcaption{
+        float: left;
+    }
+    .war ul.Slider li.war03 figure:last-of-type{
+        position: absolute;
+        box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .war ul.Slider li.war03 figure:last-of-type figcaption{
+        float: right;
+    }
+
+    /* war area Fin */
+    
+    .water ul.Slider li.wat01 div{
+        position: absolute;
+        left: 51.5%;
+        text-align: center;
+    }
+    .water ul.Slider li.wat02 div{
+        background: url("../images/hand_05.png") no-repeat 51% bottom;
+        background-size: 65vh;
+    }
+    .water.active ul.Slider li.wat02 div{
+        transform: scale(1.1);
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        position: absolute;
+        box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .water ul.Slider li.wat03 figure:first-of-type img{
+        float: right;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type img{
+        float: left;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type figcaption{
+        float: right;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        position: absolute;
+        box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+    }
+    .water ul.Slider li.wat03 figure:last-of-type figcaption{
+        float: left;
+    }
+
+    /* water area Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    body > div.grow{
+        right: 1%;
+    }
+    .education ul.Slider li.edu01 div p,
+    .medical ul.Slider li.med01 div p,
+    .war ul.Slider li.war01 div p,
+    .water ul.Slider li.wat01 div p{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    section ul li figure{
+        width: 60%;
+    }
+    section ul li figure figcaption dl dt{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    section ul li figure figcaption dl dd{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    /* sub global */
+
+    .education ul.Slider li.edu01 div{
+        top: 25%;
+        left: 54.5%;
+        width: 29vw;
+    }
+    .education ul.Slider li.edu02 div{
+        background: url("../images/hand_02.png") no-repeat 60% bottom;
+        background-size: 80vh;
+    }
+    .education.active ul.Slider li.edu02 div p{
+        min-width: 330px;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        top: 28.66%;
+        left: 25.95%;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        top: 55.4%;
+        right: 25.95%;
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med01 div{
+        top: 52%;
+        left: 46.5%;
+    }
+    .medical.active ul.Slider li.med02 div p{
+        min-width: 350px;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        top: 28.66%;
+        right: 25.95%;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        top: 55.4%;
+        left: 25.95%;
+    }
+
+    /* medical area Fin */
+
+    .war ul.Slider li.war01 div{
+        top: 74%;
+        left: 60%;
+        min-width: 300px;
+    }
+    .war.active ul.Slider li.war02 div p{
+        min-width: 370px;
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        top: 28.66%;
+        left: 25.95%;
+    }
+    .war ul.Slider li.war03 figure:last-of-type{
+        top: 55.4%;
+        right: 25.95%;
+    }
+
+    /* war area Fin */
+
+    .water ul.Slider li.wat01 div{
+        top: 68%;
+        width: 11.5vw;
+        min-width: 270px;
+    }
+    .water.active ul.Slider li.wat02 div p{
+        min-width: 460px;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        top: 28.66%;
+        right: 25.95%;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        top: 55.4%;
+        left: 25.95%;
+    }
+  
+    /* water area Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:landscape){
+    .education ul.Slider li.edu02 div{
+        background: url("../images/hand_02.png") no-repeat 45% bottom;
+        background-size: 80vh;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        top: 23.66%;
+        left: 30.95%;
+        width: 50%;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        top: 55.4%;
+        right: 30.95%;
+        width: 50%;
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med01 div{
+        top: 54%;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        top: 23.66%;
+        right: 30.95%;
+        width: 50%;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        top: 55.4%;
+        left: 30.95%;
+        width: 50%;
+    }
+
+    /* medical area Fin */
+
+    .war ul.Slider li.war01 div{
+        top: 67%;
+    }
+    .war.active ul.Slider li.war02 div p{
+        min-width: 370px;
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        top: 23.66%;
+        left: 30.95%;
+        width: 50%;
+    }
+    .war ul.Slider li.war03 figure:last-of-type{
+        top: 55.4%;
+        right: 30.95%;
+        width: 50%;
+    }
+
+    /* war area Fin */
+
+    .water.active ul.Slider li.wat02 div p{
+        min-width: 350px;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        top: 23.66%;
+        right: 30.95%;
+        width: 50%;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        top: 55.4%;
+        left: 30.95%;
+        width: 50%;
+    }
+    
+    /* water area Fin */
+}
+@media screen and (min-width:1280px){
+    section ul.Slider li figure{
+        transition-property: all;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in-out;
+    }
+    section ul.Slider li figure:hover{
+        transform: scale(1.05);
+    }
+    section ul.Slider li figure:hover img{
+        transform:  scale(1.002);
+    }
+    .bx-wrapper .bx-next:hover{
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-name: right;
+        animation-direction: alternate;
+      }
+      @keyframes right{
+          from{
+            transform: translateX(0px);
+          }
+          to{
+            transform: translateX(10px);
+          }
+      }
+      .bx-wrapper .bx-prev:hover{
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-name: left;
+        animation-direction: alternate;
+      }
+      @keyframes left{
+        from{
+          transform: translateX(0px);
+        }
+        to{
+          transform: translateX(-10px);
+        }
+      }
+    .education ul.Slider li.edu01 div p,
+    .medical ul.Slider li.med01 div p,
+    .war ul.Slider li.war01 div p,
+    .water ul.Slider li.wat01 div p{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    section ul li figure{
+        width: 46.84%;
+    }
+    section ul li figure figcaption dl dt{
+        font-weight: 700;
+        font-size: 1.565vw;
+        line-height: 5.1579vw;
+    }
+    section ul li figure figcaption dl dd{
+        font-weight: 300;
+        font-size: 1.0526vw;
+        line-height: 1.3684vw;
+    }
+
+    /* sub global */
+
+    .education ul.Slider li.edu01 div{
+        top: 24.5%;
+        left: 53.5%;
+        width: 27vw;
+        min-width: 400px;
+    }
+    .education ul.Slider li.edu02 div{
+        background: url("../images/hand_02.png") no-repeat 47% bottom;
+        background-size: 90vh;
+    }
+    .education.active ul.Slider li.edu02 div p{
+        min-width: 300px;
+    }
+    .education ul.Slider li.edu03 figure:first-of-type{
+        top: 13.66%;
+        left: 35.95%;
+    }
+    .education ul.Slider li.edu03 figure:last-of-type{
+        top: 54.4%;
+        right: 35.95%; 
+    }
+
+    /* education area Fin */
+
+    .medical ul.Slider li.med01 div{
+        top: 48%;
+        left: 50%;
+    }
+    .medical.active ul.Slider li.med02 div p{
+        min-width: 300px;
+    }
+    .medical ul.Slider li.med03 figure:first-of-type{
+        top: 13.66%;
+        right: 35.95%;
+    }
+    .medical ul.Slider li.med03 figure:last-of-type{
+        top: 54.4%;
+        left: 35.95%;
+    }
+
+    /* medical area Fin */
+
+    .war ul.Slider li.war01 div{
+        top: 67%;
+        left: 59%;
+        min-width: 400px;
+    }
+    .war.active ul.Slider li.war02 div p{
+        min-width: 300px;
+    }
+    .war ul.Slider li.war03 figure:first-of-type{
+        top: 13.66%;
+        left: 35.95%;
+    }
+    .war ul.Slider li.war03 figure:last-of-type{
+        top: 54.4%;
+        right: 35.95%;
+    }
+
+    /* war area Fin */
+
+    .water ul.Slider li.wat01 div{
+        top: 65%;
+        width: 10vw;
+        min-width: 310px;
+    }
+    .water.active ul.Slider li.wat02 div p{
+        min-width: 300px;
+    }
+    .water ul.Slider li.wat03 figure:first-of-type{
+        top: 13.66%;
+        right: 35.95%;
+    }
+    .water ul.Slider li.wat03 figure:last-of-type{
+        top: 54.4%;
+        left: 35.95%;
+    }
+
+    /* water area Fin */
+}

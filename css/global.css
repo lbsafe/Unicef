@@ -1,0 +1,309 @@
+body{
+    overflow: hidden;
+}
+header div nav ul li a,
+section ul li figure figcaption dl dt,
+section ul li figure figcaption dl dd,
+.about div h2,
+.about div p,
+.education ul li div h2,
+.education ul li div p,
+.education ul.Slider li.edu01 div h2,
+.education ul.Slider li.edu01 div p,
+.medical ul li div h2,
+.medical ul li div p,
+.medical ul.Slider li.med01 div h2,
+.medical ul.Slider li.med01 div p,
+.war ul li div h2,
+.war ul li div p,
+.war ul.Slider li.war01 div h2,
+.war ul.Slider li.war01 div p,
+.water ul li div h2,
+.water ul li div p,
+.water ul.Slider li.wat01 div h2,
+.water ul.Slider li.wat01 div p,
+footer div p{
+    font-family: Chivo;
+}
+.about div,
+.education ul.Slider li.edu02 div,
+.medical ul.Slider li.med02 div,
+.war ul.Slider li.war02 div,
+.water ul.Slider li.wat02 div,
+footer div{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header,
+footer{
+    position: fixed;
+    width: 100%;
+}
+header{
+    z-index: 9999;
+}
+header div{
+    position: relative;
+}
+header div h1{
+    position: absolute;
+    left: 2.5%;
+    z-index: 1000;
+}
+header div h1 a{
+    float: left;
+    text-indent: -9999px;
+    background: url("../images/logo_01.png") no-repeat;
+    background-size: contain;
+}
+header input[type="checkbox"]{
+    display: none;
+}
+header label{
+    float: right;
+    right: 2.5%;
+    display: block;
+    width: 30px;
+    height: 19px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
+header label span{
+    display: inline-block;
+    background-color: #fff;
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
+}
+header div input[id="navIcon"]:checked + label span:first-of-type{
+    transform: scaleY(0.333);
+}
+header div input[id="navIcon"]:checked + label span:nth-of-type(2){
+    transform: scaleY(0.67);
+}
+header div nav{
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.35s;
+}
+header input[type="checkbox"]:checked + label + nav{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header div nav ul{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 105%;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+}
+header div nav ul:after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+header input[type="checkbox"]:checked + label + nav ul{
+    left: 0;
+}
+header div nav ul li{
+    display: inline-block;
+}
+header div nav ul li a{
+    font-weight: 300;
+    text-decoration: none;
+}
+header nav ul li a:after{
+    content: '';
+    display: block;
+    margin-top: 3px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+header nav ul li:hover a:after{
+    transform: scaleX(1);
+}
+
+/* header Fin */
+
+footer{
+    bottom: 0;
+    height: 45px;
+    background-color: rgba(51, 117, 177, 0.45);
+}
+footer div a{
+    display: inline-block;
+    text-indent: -9999px;
+}
+footer div p{
+    margin-top: 16px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    border-left: 1px solid #fff;
+}
+footer div a:first-of-type{
+    float: left;
+    margin: 6px 10px 0 0;
+    padding: 12px 15px 11px;
+    background: url("../images/logo_02.png") no-repeat;
+    background-size: contain;
+}
+footer div > a:not(:first-of-type){
+    float: right;
+    padding: 10px 12px;
+    margin: 13px 0 0 20px;
+}
+footer div > a:nth-of-type(2){
+    background: url("../images/sns_03.png") no-repeat;
+}
+footer div > a:nth-of-type(3){
+    background: url("../images/sns_02.png") no-repeat;
+}
+footer div > a:last-of-type{
+    background: url("../images/sns_01.png") no-repeat;
+    margin-left: 0;
+}
+
+/* footer Fin */
+
+@media screen and (max-width:767px){
+    header div{
+        height:75px;
+    }
+    header div h1{
+        top:50%; transform:translateY(-50%);
+    }
+    header div label{
+        top:43%; transform:translateY(-50%);
+    }
+    header div h1 a{
+        margin-top: 25px;
+        padding: 10px 0;
+        width: 80px;
+    }
+    header label{
+        margin-top: 12px;
+        text-align: right;
+    }
+    header label span{
+        width: 2px;
+        height: 23px;
+    }
+    header div label span:first-of-type{
+        margin-right: 3px;
+    }
+    header div label span:nth-of-type(2){
+        margin-right: 2px;
+    }
+    header input[type="checkbox"]:checked + label + nav{
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    }
+    header div nav ul{
+        box-sizing: border-box;
+        padding: 35px 22% 0 28%;
+        height: 75px;
+    }
+    header div nav ul li{
+        margin-top: 0px;
+    }
+    header nav ul li:not(:first-of-type){
+        margin-left: 5%;
+    }
+    header div nav ul li a{
+        font-size: 14px;
+    }
+    /* header Fin */
+}
+@media screen and (min-width:768px){
+    header div{
+        height:105px;
+    }
+    header div h1 a{
+        margin-top: 49px;
+        padding: 20px 0;
+    }
+    header label{
+        margin-top: 22px;
+    }
+    header label span{
+        width: 3px;
+        height: 30px;
+    }
+    header div label span:not(:last-of-type){
+        margin-right: 4px;
+    }
+    header input[type="checkbox"]:checked + label + nav{
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+    }
+    header div nav ul{
+        height: 105px;
+    }
+    /* header Fin */
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    header div h1{
+        top:50%; transform:translateY(-50%);
+    }
+    header div label{
+        top:43%; transform:translateY(-50%);
+    }
+    header div h1{
+        position: absolute;
+        left: 2.5%;
+        z-index: 1000;
+    }
+    header div h1 a{
+        width: 120px;
+    }
+    header div nav{
+        height: 100%;
+    }
+    header input[type="checkbox"]:checked + label + nav ul{
+        left: 0;
+    }
+    header div nav ul li{
+        margin-top: 60px;
+    }
+    header nav ul li{
+        margin-left: 2.5%;
+    }
+    header div nav ul li a{
+        font-size: 20px;
+    }
+    /* header Fin */
+}
+@media screen and (min-width:1280px){
+    header div h1,
+    header div label{
+        top:50%; transform:translateY(-50%);
+    }
+    header div h1 a{
+        width: 170px;
+    }
+    header div nav{
+        height: 105px;
+    }
+    header div nav ul li{
+        margin-top: 68px;
+    }
+    header nav ul li{
+        margin-left: 4%;
+    }
+    header div nav ul li a{
+        font-size: 24px;
+    }
+    /* header Fin */
+}
