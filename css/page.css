@@ -233,7 +233,7 @@ section ul.pagination li a.active{
     opacity: 1;
 }
 .war.active ul.Slider li.war02 div p{
-    width: 28%;
+    width: 27%;
 }
 .war ul.Slider li.war03 figure:after{
     content: ''; display: block; clear: both; visibility: hidden;
